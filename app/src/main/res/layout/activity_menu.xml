@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Menu">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#F3D24A"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="#2B4CEF" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="312dp"
+        android:src="@drawable/blury_bar"
+        android:contentDescription="@string/blury_bar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="312dp"
+            android:layout_marginEnd="193dp"
+            android:contentDescription="@string/menu_items"
+            android:text="@string/menu"
+            android:textAllCaps="true"
+            android:textColor="#D30404"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="410dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/hamburgers_and_sandwiches"
+                    android:textColor="#F1D143"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/hamburgerMenu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageBaconBurger"
+                        android:layout_width="104dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/bacon_burger"
+                        android:src="@drawable/bacon_burger" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/bacon_cheese_burger_1_4_lb_burger_served_on_a_buttery_kaiser_roll_with_american_cheese_and_topped_with_crispy_bacon_calories_595_per_serving_9_45"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hamburgerMenu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageCheeseBurger"
+                        android:layout_width="104dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/cheese_burger"
+                        android:src="@drawable/cheese_burger" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/cheese_burger_1_4_lb_burger_served_on_a_buttery_kaiser_roll_with_american_cheese_dressed_the_way_you_like_it_calories_531_per_serving_8_45"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hamburgerMenu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageHouseBurger"
+                        android:layout_width="104dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/house_burger"
+                        android:src="@drawable/house_burger" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/the_house_burger_1_5_lb_burger_served_on_a_buttery_kaiser_roll_with_two_slices_of_crispy_bacon_pepper_jack_cheese_on_a_bed_of_fried_crisp_onions_calories_610_per_serving_11_45"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sandwichMenu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageBLTSandwich"
+                        android:layout_width="104dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/blt_sandwich"
+                        android:src="@drawable/blt_sandwich" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/blt_sandwich_served_on_freshly_baked_toasted_bread_four_slices_of_crispy_bacon_fresh_lettuce_and_tomatos_with_your_choice_of_condiments_calories_343_1_sandwich_serving_size_3_99"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sandwichMenu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageChickenSandwich"
+                        android:layout_width="104dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/chicken_sandwich"
+                        android:src="@drawable/chicken_sandwich" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/chicken_sandwich_a_crispy_boneless_chicken_breast_served_the_way_you_like_it_with_your_choice_of_condiments_calories_440_4_25"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sandwichMenu3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageClubSandwich"
+                        android:layout_width="104dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/club_sandwich"
+                        android:src="@drawable/club_sandwich" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/club_sandwich_served_with_your_choice_of_black_forest_ham_turkey_roast_beef_or_chicken_breast_topped_with_bacon_lettuce_tomatoes_and_mayo_on_toasted_bread_calories_395_4_30"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sandwichMenu4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageReubenSandwich"
+                        android:layout_width="104dp"
+                        android:layout_height="93dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/reuben_sandwich"
+                        android:src="@drawable/reuben_sandwich" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="90dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/reuben_sandwich_marbled_rye_bread_filled_with_freshly_sliced_corned_beef_melty_swiss_cheese_tangy_sauerkraut_and_creamy_thousand_island_dressing_calories_680_5_25"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/orderButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/black"
+                    android:onClick="onOrderButtonClick"
+                    android:text="@string/click_to_order"
+                    android:textAllCaps="true"
+                    android:textColor="#2B4CEF"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/drinks"
+                    android:textColor="#F3D347"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewDrinks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:contentDescription="@string/drinks"
+                        android:src="@drawable/drinks" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:text="@string/coca_cola_sprite_fanta_orange_dr_pepper_ice_tea_sweet_tea_water_apple_juice"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

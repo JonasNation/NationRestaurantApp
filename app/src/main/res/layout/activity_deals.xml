@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Deals">
+
+    <TextView
+        android:id="@+id/textViewDeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/great_daily_deals"
+        android:textAllCaps="true"
+        android:textColor="#0E0E0E"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="110dp"
+        android:id="@+id/coupon_1"
+        android:onClick="onPromoButtonClick"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/promotional_codes"/>
+
+    <Button
+        android:id="@+id/coupon_2"
+        android:layout_width="360dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onCouponButtonClick"
+        android:text="@string/coupon_deals"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

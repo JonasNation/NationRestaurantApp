@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- menu item pizza -->
+    <item
+        android:id="@+id/action_maps"
+        android:title="@string/locations"
+        android:onClick="onLocationClick"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/action_reserve"
+        android:title="@string/reserve"
+        android:onClick="onClickReserve"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/action_deals"
+        android:title="@string/promo_codes"
+        android:onClick="onPromoClick"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/action_coupons"
+        android:title="@string/coupon_deals_"
+        android:onClick="onCouponClick"
+        app:showAsAction="ifRoom|withText"/>
+
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:onClick="onSettingsClick"
+        app:showAsAction="never"/>
+
+</menu>

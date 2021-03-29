@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2D2D"
+    tools:context=".Orders">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/place_your_order"
+                android:textColor="#C10606"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/burger_sandwichOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/hamburgers_and_sandwiches_order"
+                android:textAllCaps="true"
+                android:textColor="#FDD835"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pizzaOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/what_will_it_be"
+                android:textColor="@color/light_blue_50" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBaconBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/bacon_cheese_burger"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCheeseBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/cheese_burger_"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxHouseBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/the_house_burger"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="@string/fries_included_with_order"
+                android:textColor="#EAD36F" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:text="@string/kids_small_drinks_are_free"
+                android:textColor="#EAD36F" />
+
+            <CheckBox
+                android:id="@+id/checkBoxClub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/club_sandwich_"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBLT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/blt_sandwich_"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxChicken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/chicken_sandwich_"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxReuben"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/reuben_sandwich_"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/drinksOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/beverages_order"
+                android:textAllCaps="true"
+                android:textColor="#FDD835"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <CheckBox
+                android:id="@+id/checkBoxCoca_Cola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/coca_cola"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSprite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/sprite"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxFanta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/fanta_orange"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxHi_C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/hi_c"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBargs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/bargs_rootbeer"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxIce_Tea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/ice_tea"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSweetTea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/sweet_tea"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAppleJuice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/apple_juice"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBoxWater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckBoxClicked"
+                android:text="@string/water"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/totalPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/total_purchase"
+                android:textAllCaps="true"
+                android:textColor="@color/light_blue_50"
+                android:inputType="textMultiLine"
+                android:textSize="18sp"
+                tools:ignore="TextViewEdits" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#2E2D2D"
+                android:contentDescription="@string/back_to_menu"
+                android:onClick="backToMenuButton"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/submit"
+                    style="@android:style/ButtonBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#2E2D2D"
+                    android:onClick="onSubmitOrderButton"
+                    android:text="@string/submit_order"
+                    android:textColor="#DC0707"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/delete"
+                    style="@android:style/ButtonBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#2E2D2D"
+                    android:onClick="deleteOrder"
+                    android:text="@string/cancel_order"
+                    android:textColor="#DC0707"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/receipt"
+                    style="@android:style/ButtonBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#2E2D2D"
+                    android:onClick="onReceiptButtonClick"
+                    android:text="@string/receipt"
+                    android:textColor="#DC0707"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
